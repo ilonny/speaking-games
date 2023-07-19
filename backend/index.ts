@@ -128,7 +128,35 @@ app.use((err, req, res, next) => {
     }
 });
 
-app.post("/protected/nhi-cards", async (req: Request, res: Response) => {
+app.post("/nhi-cards", async (req: Request, res: Response) => {
+    const { user_id } = req.body;
+    let existedUser;
+    try {
+        existedUser = await UserModel.findOne({
+            where: {
+                id: user_id,
+            },
+        });
+    } catch (err) {
+        // res.json({ error: "Internal server error" });
+        // return;
+    }
+
+    if (!existedUser) {
+        res.json({ error: "user not exist" });
+        return;
+    }
+
+    if (existedUser?.nhi_payed) {
+        res.json({ cards: allCards, free: false });
+        return;
+    } else {
+        res.json({ cards: freeCards, free: true });
+        return;
+    }
+});
+
+app.post("/all-cards", async (req: Request, res: Response) => {
     const { user_id } = req.body;
     let existedUser;
     try {
@@ -157,5 +185,5 @@ app.post("/protected/nhi-cards", async (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-    console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+    console.log(`⚡️[server]: Server is running at http://0.0.0.0:${port}`);
 });
