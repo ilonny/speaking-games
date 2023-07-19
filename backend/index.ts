@@ -142,10 +142,10 @@ app.post("/nhi-cards", async (req: Request, res: Response) => {
         // return;
     }
 
-    if (!existedUser) {
-        res.json({ error: "user not exist" });
-        return;
-    }
+    // if (!existedUser) {
+    //     res.json({ error: "user not exist" });
+    //     return;
+    // }
 
     if (existedUser?.nhi_payed) {
         res.json({ cards: allCards, free: false });
@@ -195,7 +195,7 @@ const html = `
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello from Render!</title>
+    <title>Hello from Speaking Games!</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
       setTimeout(() => {
@@ -236,7 +236,7 @@ const html = `
   </head>
   <body>
     <section>
-      Hello from Render!
+      Hello from Speaking games api! any questions? contact me in telegram @iLonny
     </section>
   </body>
 </html>
