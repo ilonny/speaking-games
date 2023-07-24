@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Regular.eot') format('embedded-opentype'), 
+       url('./assets/fonts/Gilroy-Regular.woff') format('woff'), 
+       url('./assets/fonts/Gilroy-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'UA';
+  src: local('UA'), url(./assets/fonts/UA-regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'UA';
+    font-weight: 600;
+    src: local('UA'), url(./assets/fonts/UA-bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'UA';
+    font-weight: 900;
+    src: local('UA'), url(./assets/fonts/UA-black.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  src: local('Lato'), url(./assets/fonts/UA-black.otf) format('opentype');
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: Gilroy;
+}
+
+h1 {
+  font-family: UA, Helvetice-neue, Arial, sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
