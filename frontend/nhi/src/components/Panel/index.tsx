@@ -33,15 +33,17 @@ export const Panel: FC<TPops> = ({
                 }}
             >
                 <div>
-                    <Title>{title}</Title>
+                    <Title style={{ color: textColor }}>{title}</Title>
                     {description && (
                         <>
                             <Divider height={20} />
-                            <Description>{description}</Description>
+                            <Description style={{ color: textColor }}>
+                                {description}
+                            </Description>
                         </>
                     )}
                 </div>
-                {hint && <Hint>{hint}</Hint>}
+                {hint && <Hint style={{ color: textColor }}>{hint}</Hint>}
             </Flex>
         </Wrapper>
     );
@@ -50,7 +52,7 @@ export const Panel: FC<TPops> = ({
 const Wrapper = styled.div`
     background-color: #fff;
     border-radius: 20px;
-    min-height: 515px;
+    min-height: 415px;
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
