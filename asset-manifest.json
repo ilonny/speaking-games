@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/speaking-games/static/css/main.3c0312c1.css",
+    "main.js": "/speaking-games/static/js/main.749330aa.js",
+    "static/media/game-logo.svg": "/speaking-games/static/media/game-logo.71cf9ebd9538ae2f14a4e4835cc8eaab.svg",
+    "static/media/Gilroy-Regular.eot": "/speaking-games/static/media/Gilroy-Regular.1d051d9d4215c09cbcaa.eot",
+    "static/media/Gilroy-Regular.ttf": "/speaking-games/static/media/Gilroy-Regular.b91b0127c56a8e5f9e83.ttf",
+    "static/media/Gilroy-Regular.woff": "/speaking-games/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
+    "static/media/UA-black.otf": "/speaking-games/static/media/UA-black.f7ed386caee513c4ec1b.otf",
+    "static/media/UA-bold.otf": "/speaking-games/static/media/UA-bold.baeeee179efa981202cb.otf",
+    "static/media/UA-regular.otf": "/speaking-games/static/media/UA-regular.bfcad137a1a0ea9faabe.otf",
+    "static/media/intro_logo.svg": "/speaking-games/static/media/intro_logo.01fa3e1c1dfa9c7088b919f6de567782.svg",
+    "static/media/game-logo-sg.svg": "/speaking-games/static/media/game-logo-sg.52bf6cd1f814b8ac81cc96079f1d08f3.svg",
+    "index.html": "/speaking-games/index.html",
+    "main.3c0312c1.css.map": "/speaking-games/static/css/main.3c0312c1.css.map",
+    "main.749330aa.js.map": "/speaking-games/static/js/main.749330aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c0312c1.css",
+    "static/js/main.749330aa.js"
+  ]
+}
